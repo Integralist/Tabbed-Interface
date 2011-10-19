@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tabbed Interface</title>
+		<link rel="stylesheet" href="tabs.css">
+	</head>
+	<body>
+			
+		<ul id="my-home-tabs" class="tabbed-ui bt">
+			<li class="selected">
+				<a href="#tab-a">Tab 1</a>
+			</li>
+			<li>
+				<a href="#tab-b">Tab 2</a>
+			</li>
+		</ul>
+		<div class="tabbed-ui-content bbr" id="tab-a">
+			Tab Content 1
+		</div>
+		<div class="tabbed-ui-content bbr hideElement" id="tab-b">
+			Tab Content 2
+		</div>
+
+		<hr>
+		
+		<ul id="my-about-tabs" class="tabbed-ui bt">
+			<li class="selected">
+				<a href="#tab-c">Tab 1</a>
+			</li>
+			<li>
+				<a href="#tab-d">Tab 2</a>
+			</li>
+		</ul>
+		<div class="tabbed-ui-content bbr" id="tab-c">
+			Tab Content 1
+		</div>
+		<div class="tabbed-ui-content bbr hideElement" id="tab-d">
+			Tab Content 2
+		</div>
+
+		
+		<script src="Standardizer.js"></script>
+		<script src="tabs.js"></script>
+		<script type="text/javascript">
+			Tabs.init(['home', 'about']);
+		</script>
+		
+	</body>
+</html>
