@@ -1,0 +1,79 @@
+/* Generic font style which you can remove if you want */
+body {
+	font: normal small Arial, Helvetica, sans-serif;
+}
+
+.hideElement {
+	display: none;
+}
+
+.showElement {
+	display: block !important;
+}
+
+.tabbed-ui {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tabbed-ui li {
+    float: left;
+    margin-left: 2px;
+}
+
+.tabbed-ui li:first-child {
+    margin: 0;
+}
+
+.tabbed-ui a,
+.tabbed-ui-content a {
+	color: #fff;
+}
+
+.tabbed-ui a {
+    background-color: #3A3A3C;
+    display: block;
+    padding: 8px 9px 6px;
+    text-decoration:none;
+    
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.tabbed-ui a:hover,
+.tabbed-ui a:focus,
+.tabbed-ui .selected a {
+    background-color: #EC008C;
+}
+
+.tabbed-ui-content {
+    background-color: #000;
+    border: 3px solid #EC008C;
+    clear: both;
+    color: #fff;
+    padding: 10px;
+}
+
+/*
+ * bt = top corners (top-left, top-right)
+ * bbr = border-bottom-right
+ */
+
+.tabbed-ui.bt a {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabbed-ui-content.bbr {
+    -webkit-border-radius: 0 0 25px 0;
+    -moz-border-radius: 0 0 25px 0;
+    -o-border-radius: 0 0 25px 0;
+    border-radius: 0 0 25px 0;
+}
